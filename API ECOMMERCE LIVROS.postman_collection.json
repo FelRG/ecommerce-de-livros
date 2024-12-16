@@ -1,0 +1,542 @@
+{
+	"info": {
+		"_postman_id": "a4e38fe7-77d2-4a99-b8d3-d00e7029fbe8",
+		"name": "API ECOMMERCE LIVROS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39816162"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Criar Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Felipe\",\r\n    \"email\": \"felipe@example.com\",\r\n    \"senha\": \"senha123\",\r\n    \"datacadastro\": \"2024-11-10T17:15:09.962Z\",\r\n    \"ativo\": true,\r\n    \"permissao\": \"ROLE_CLIENTE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/cliente"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Todos Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/cliente/listar"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Cliente Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/cliente/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Cliente Uuid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/cliente/uuid/364ada71-1fe3-4658-8366-1c5ce9d2a0c8"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Cliente Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idcliente\": 1,\r\n    \"nome\": \"Felipe2\",\r\n    \"email\": \"felipe2@example.com\",\r\n    \"senha\": \"senha12\",\r\n    \"datacadastro\": \"2024-11-10T17:15:09.962Z\",\r\n    \"ativo\": true,\r\n    \"permissao\": \"ROLE_ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/cliente/"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Cliente Uuid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uuid\": \"364ada71-1fe3-4658-8366-1c5ce9d2a0c8\",\r\n    \"nome\": \"Felipe3\",\r\n    \"email\": \"felipe3@example.com\",\r\n    \"senha\": \"senha1\",\r\n    \"datacadastro\": \"2024-11-10T17:15:09.962Z\",\r\n    \"ativo\": true,\r\n    \"permissao\": \"ROLE_ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Cliente Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/cliente/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Cliente Uuid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/cliente/uuid/364ada71-1fe3-4658-8366-1c5ce9d2a0c8"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Livro",
+			"item": [
+				{
+					"name": "Criar Livro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"O Senhor dos Anéis\",\r\n    \"autor\": \"J.R.R. Tolkien\",\r\n    \"descricao\": \"Uma obra de fantasia épica.\",\r\n    \"preco\": 39.9,\r\n    \"esta_a_venda\": true,\r\n    \"url\": \"http://example.com/livro.jpg\",\r\n    \"qntd_livros\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/livro"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Todos Livros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/livro/listar"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Livro Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/livro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Livro Uuid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/livro/uuid/2051ad12-63bc-4f99-aafe-a46336473ad9"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Livro Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idlivro\": 1,\r\n    \"titulo\": \"O Senhor dos Anéis - Edição Definitiva\",\r\n    \"autor\": \"J.R.R. Tolkien\",\r\n    \"descricao\": \"Uma obra de fantasia épica com novas edições.\",\r\n    \"preco\": 59.9,\r\n    \"esta_a_venda\": true,\r\n    \"url\": \"http://example.com/livro.jpg\",\r\n    \"qntd_livros\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/livro"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Livro Uuid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uuid\": \"2051ad12-63bc-4f99-aafe-a46336473ad9\",\r\n    \"titulo\": \"O Senhor dos Anéis - Edição Definitiva 2\",\r\n    \"autor\": \"J.R.R. Tolkien\",\r\n    \"descricao\": \"Uma obra de fantasia épica com novas edições remasterizadas.\",\r\n    \"preco\": 69.9,\r\n    \"esta_a_venda\": true,\r\n    \"url\": \"http://example.com/livro.jpg\",\r\n    \"qntd_livros\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Livro Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/livro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Livro Uuid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/livro/uuid/2051ad12-63bc-4f99-aafe-a46336473ad9"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CarrinhoCompra",
+			"item": [
+				{
+					"name": "Adicionar Item Carrinho",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": {\r\n        \"idcliente\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/carrinho/adicionar/b1a5b4c4-3c5f-4d9a-8d3e-1f84e3a00f6c/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Itens Carrinho",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": {\r\n        \"idcliente\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/carrinho/listar"
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Item Carrinho",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": {\r\n        \"idcliente\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/carrinho/remover/b1a5b4c4-3c5f-4d9a-8d3e-1f84e3a00f6c"
+					},
+					"response": []
+				},
+				{
+					"name": "Esvaziar Carrinho",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": {\r\n        \"idcliente\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/carrinho/esvaziar"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Compra",
+			"item": [
+				{
+					"name": "Criar Compra",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dataCompra\": \"2024-11-10\",\r\n    \"valorTotal\": 199.99,\r\n    \"cliente\": {\r\n    \"idcliente\": 1\r\n    },\r\n        \"itensCompra\": [{\r\n        \"livro\": {\r\n        \"uuid\": \"b1a5b4c4-3c5f-4d9a-8d3e-1f84e3a00f6c\"\r\n        },\r\n        \"quantidade\": 2\r\n        }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/compra"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Todas Compras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/compra/listar"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Compra Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/compra/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Compra Uuid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/compra/uuid/d4f5c6a8-3b9e-4dca-bb9e-4f8e123abcde"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Compra Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idcompra\": 1,\r\n    \"dataCompra\": \"2024-11-11\",\r\n    \"valorTotal\": 249.99,\r\n    \"cliente\": {\r\n    \"idcliente\": 1\r\n    },\r\n        \"itensCompra\": [{\r\n        \"livro\": {\r\n        \"uuid\": \"b1a5b4c4-3c5f-4d9a-8d3e-1f84e3a00f6c\"\r\n        },\r\n        \"quantidade\": 3\r\n        }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/compra"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Compra Uuid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uuid\": \"b1a5b4c4-3c5f-4d9a-8d3e-1f84e3a00f6c\",\r\n    \"dataCompra\": \"2024-11-11\",\r\n    \"valorTotal\": 249.99,\r\n    \"cliente\": {\r\n    \"idcliente\": 1\r\n    },\r\n        \"itensCompra\": [{\r\n        \"livro\": {\r\n        \"uuid\": \"b1a5b4c4-3c5f-4d9a-8d3e-1f84e3a00f6c\"\r\n        },\r\n        \"quantidade\": 3\r\n        }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/compra"
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Compra Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/compra/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Compra Uuid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/compra/uuid/d4f5c6a8-3b9e-4dca-bb9e-4f8e123abcde"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ItensCompra",
+			"item": [
+				{
+					"name": "Criar Item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantidade\": 2,\r\n    \"preco\": 29.90,\r\n    \"livro\": {\r\n    \"idlivro\": 1\r\n    },\r\n    \"compra\": {\r\n    \"idcompra\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/itens-compra"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Todos Itens",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/itens-compra/listar"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Item Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/itens-compra/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Ver Item Uuid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/itens-compra/uuid/c3b4e5f8-4a9e-47db-9f1e-5c123abc7890"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Item Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"iditenscompra\": 1,\r\n    \"quantidade\": 3,\r\n    \"preco\": 32.90,\r\n    \"livro\": {\r\n    \"idlivro\": 1\r\n    },\r\n    \"compra\": {\r\n    \"idcompra\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/itens-compra/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Item Uuid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uuid\": \"b1a5b4c4-3c5f-4d9a-8d3e-1f84e3a00f6c\",\r\n    \"quantidade\": 3,\r\n    \"preco\": 32.90,\r\n    \"livro\": {\r\n    \"idlivro\": 1\r\n    },\r\n    \"compra\": {\r\n    \"idcompra\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/itens-compra/b1a5b4c4-3c5f-4d9a-8d3e-1f84e3a00f6c"
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Item Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/itens-compra/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Item Uuid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/itens-compra/uuid/c3b4e5f8-4a9e-47db-9f1e-5c123abc7890"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Logar Sistema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"felipe@example.com\",\r\n    \"senha\": \"senha123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Acesso EndPoint Protegido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecommerce-livros-feliperighi/cliente"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
