@@ -22,8 +22,4 @@ A aplicação foi desenvolvida em **Spring Boot** com banco de dados **PostgreSQ
 
 ### Segurança  
 - Implementação de **Spring Security** com autenticação e autorização.  
-- Endpoints protegidos com acesso somente via **token** gerado pela API.  
-
-### Links para Documentação  
-- [Swagger UI](http://localhost:8080/ecommerce-livros-feliperighi/swagger-ui.html)  
-- [API Docs](http://localhost:8080/ecommerce-livros-feliperighi/api-docs)  
+- Endpoints protegidos com acesso somente via **token** gerado pela API.
